@@ -1,0 +1,7 @@
+include\**
+*.tar.gz
+*.zip
+go.mod
+go.sum
+*.h
+*.go
