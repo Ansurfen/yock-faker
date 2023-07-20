@@ -3,7 +3,7 @@ local defaultVersion = "1.0.0"
 return {
     name = "faker",
     version = defaultVersion,
-    load = function()
+    load = function(opt)
         local file = multi_fetch(env.platform:Zip(), {
             Target = wrapzip("faker-" .. defaultVersion),
             Version = opt.ver or defaultVersion
